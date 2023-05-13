@@ -9,6 +9,7 @@
   --clr-green-100: hsl(145, 58%, 55%);
   --clr-orange-100: hsl(43, 84%, 65%);
   --clr-orange-200: hsl(15, 100%, 70%);
+  --clr-white-100: #fff;
 
   /* Neutral Colors */
   --clr-neutral-100: hsl(236, 100%, 87%);
@@ -31,7 +32,7 @@
   font-weight: var(--fw-200);
 
   background-color: var(--clr-neutral-400);
-  color: #fff;
+  color: var(--clr-white-100);
 }
 
 body {
@@ -80,7 +81,7 @@ main {
 
 .primary-header > figure > img {
   height: 96px;
-  border: 4px solid #fff;
+  border: 4px solid var(--clr-white-100);
   border-radius: calc(100% / 2);
 }
 
@@ -98,9 +99,12 @@ main {
   }
 }
 
+.primary-header menu [aria-selected] {
+  color: var(--clr-white-100);
+}
+
 .activity-container {
   --activity-width: 160px;
-  --activity-height: var(--activity-width);
   --activity-padding: var(--padding);
 }
 
@@ -129,10 +133,8 @@ main {
 .activity {
   border-radius: 1rem;
   overflow: hidden;
-  height: var(--activity-height);
   flex-shrink: 0;
   flex-grow: 1;
-  flex-basis: var(--activity-height);
   display: flex;
   flex-direction: column;
 }
