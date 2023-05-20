@@ -30,69 +30,15 @@
               </div>
             </figure>
             <menu>
-              <li>Daily</li>
-              <li aria-selected="true">Weekly</li>
-              <li>Monthly</li>
+              <li data-timeframe="daily">Daily</li>
+              <li data-timeframe="weekly">Weekly</li>
+              <li data-timeframe="monthly">Monthly</li>
             </menu>
           </header>
         </div>
-        <div class="activities">
-          <article class="activity" data-activity-type="work">
-            <div class="icon">
-              <img src="./images/icon-work.svg" alt="">
-            </div>
-            <div class="activity-details">
-              <p><strong>Work</strong> <img src="./images/icon-ellipsis.svg" alt=""></p>
-              <p><span>32hrs</span><span>Last Week - 36hrs</span></p>
-            </div>
-          </article>
-          <article class="activity" data-activity-type="play">
-            <div class="icon">
-              <img src="./images/icon-play.svg" alt="">
-            </div>
-            <div class="activity-details">
-              <p><strong>Play</strong><img src="./images/icon-ellipsis.svg" alt=""></p>
-              <p><span>10hrs</span><span>Last Week - 8hrs</span></p>
-            </div>
-          </article>
-          <article class="activity" data-activity-type="study">
-            <div class="icon">
-              <img src="./images/icon-study.svg" alt="">
-            </div>
-            <div class="activity-details">
-              <p><strong>Study</strong><img src="./images/icon-ellipsis.svg" alt=""></p>
-              <p><span>4hrs</span><span>Last Week - 7hrs</span></p>
-            </div>
-          </article>
-          <article class="activity" data-activity-type="exercise">
-            <div class="icon">
-              <img src="./images/icon-exercise.svg" alt="">
-            </div>
-            <div class="activity-details">
-              <p><strong>Exercise</strong><img src="./images/icon-ellipsis.svg" alt=""></p>
-              <p><span>4hrs</span><span>Last Week - 5hrs</span></p>
-            </div>
-          </article>
-          <article class="activity" data-activity-type="social">
-            <div class="icon">
-              <img src="./images/icon-social.svg" alt="">
-            </div>
-            <div class="activity-details">
-              <p><strong>Social</strong><img src="./images/icon-ellipsis.svg" alt=""></p>
-              <p><span>5hrs</span><span>Last Week - 10hrs</span></p>
-            </div>
-          </article>
-          <article class="activity" data-activity-type="self-care">
-            <div class="icon">
-              <img src="./images/icon-self-care.svg" alt="">
-            </div>
-            <div class="activity-details">
-              <p><strong>Self Care</strong><img src="./images/icon-ellipsis.svg" alt=""></p>
-              <p><span>2hrs</span><span>Last Week - 2hr</span></p>
-            </div>
-          </article>
-        </div>
+        <div class="activities" data-activities></div>
       </div>
     </main>
+    <script src="main.js"></script>
   </body>
 </html>
